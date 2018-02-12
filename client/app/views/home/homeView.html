@@ -1,0 +1,25 @@
+<div class="menuBg">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+        <div>
+          <h1>{{homeCtrl.title}}</h1>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <sports-check s="homeCtrl.selectedHobbies">
+        </sports-check>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row no-gutters spacer">
+    <div class="col-xs-12 col-lg-9">
+      <map-spots-handler s="homeCtrl.selectedHobbies" m="homeCtrl.selectedMark" f="homeCtrl.favorite"></map-spots-handler>
+    </div>
+    <div class="col-xs-12 col-lg-3">
+      <fav-list m="homeCtrl.selectedMark" f="homeCtrl.favorite"></fav-list>
+    </div>
+  </div>
+</div>

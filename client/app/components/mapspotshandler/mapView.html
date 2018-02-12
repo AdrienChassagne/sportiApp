@@ -1,0 +1,12 @@
+<div map-lazy-load="https://maps.google.com/maps/api/js" map-lazy-load-params="{{mapSpotsCtrl.urlApi}}">
+  <ng-map default-style="false" class="customMap col-xs-12" center="current-location" zoom="10">
+    <marker position="current-location"></marker>
+    <custom-marker ng-repeat="p in mapSpotsCtrl.mar" position="{{p.pos[0]}}, {{p.pos[1]}}">
+      <button class='pin' ng-click="mapSpotsCtrl.createFavMark(p)">
+        <div class="center">
+            <i ng-class="mapSpotsCtrl.setClass(p.hobby)" class="icoMap" ng-style="{color: {true:'#ff8f00'}[p.favorite]}"></i>
+        </div>
+        </button>
+    </custom-marker>
+  </ng-map>
+</div>

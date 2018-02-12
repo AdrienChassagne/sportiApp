@@ -1,0 +1,59 @@
+<div class="favContain">
+  <div class="favh">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="text-center">Bookmarks</h2>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>Create bookmarks group</h3>
+      <div class="col-xs-12">
+        <div class="input-group">
+          <input type="text" class="form-control" name="newfavcat" ng-model="favListCtrl.title" ng-value="favListCtrl.title" placeholder="bookmarks group name">
+          <span class="input-group-btn">
+                  <button type="button" class="btn btn-default" ng-click="favListCtrl.addFav()">Add</button>
+              </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12">
+      <div class="add-item" ng-if="favListCtrl.m.name">
+        <div class="col-xs-12">
+          <p>Choose a category for your bookmark:</p>
+          <p class="item-name">{{favListCtrl.m.name}}</p>
+        </div>
+        <div class="col-xs-12">
+          <div class="input-group">
+            <select class="form-control input-sm" ng-model="favListCtrl.currentListId" ng-options="item.name for item in favListCtrl.favList"></select>
+            <span class="input-group-btn"><button type="button" class="btn btn-default btn-sm" name="button" ng-click="favListCtrl.addFavToList(favListCtrl.m)">Add bookmark</button></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12">
+      <div ng-repeat="item in favListCtrl.favList" class="col-xs-12">
+        <div class="spacer favGroupContent row no-gutters">
+          <div>
+            <div class="col-xs-8">
+              <span><i class="fas fa-heart"></i></span>
+              <h4 class="catTitle">{{item.name}}</h4>
+            </div>
+            <button class="btn btn-sm btn-default pull-right" type="button" name="button" ng-click="favListCtrl.deleteFav(item)">delete</button>
+            <div class="favGroupItem col-xs-12" ng-repeat="i in item.idList">
+              <div class="itemSpace">
+                <div class="col-xs-10">
+                  <span>{{i.name}}</span>
+                </div>
+                <button class="btn btn-sm btn-default pull-right no-border" ng-click="favListCtrl.deleteFavItem(item, i)">
+                    <i class="far fa-trash-alt pull-right" ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?gpn7ki');
+  src: url('../fonts/icomoon.eot?gpn7ki#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?gpn7ki') format('truetype'), url('../fonts/icomoon.woff?gpn7ki') format('woff'), url('../fonts/icomoon.svg?gpn7ki#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-surf:before {
+  content: "\e900";
+}
+
+.icon-parapente:before {
+  content: "\e901";
+}
+
+.icon-equitation:before {
+  content: "\e902";
+}
+
+.icon-ski:before {
+  content: "\e903";
+}
+
+.icon-wakeboard:before {
+  content: "\e905";
+}
+
+.icon-vtt:before {
+  content: "\e907";
+}
+
+.icon-cyclisme:before {
+  content: "\e908";
+}
+
+.icon-escalade:before {
+  content: "\e909";
+}
+
+.icon-randonnee:before {
+  content: "\e90a";
+}
+
+.icon-kitesurf:before {
+  content: "\e90b";
+}

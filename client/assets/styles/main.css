@@ -1,0 +1,170 @@
+.catTitle:first-letter {
+  text-transform: uppercase;
+}
+.catTitle {
+  text-transform: lowercase;
+  display: inline-block;
+}
+.favContain {
+  background-color: #63a3ff;
+  color: white;
+  margin-bottom: 15px;
+}
+.favContain .favh {
+  background-color: #1875d1;
+}
+.favContain .add-item {
+  text-align: center;
+  border-top: solid;
+  border-width: 1px;
+  border-color: #1875d1;
+  margin-top: 15px;
+  padding-top: 8px;
+}
+.favContain .add-item .item-name {
+  font-size: 14px;
+  text-align: center;
+}
+.favGroupContent {
+  background-color: #F5F5F6;
+  color: #1b1b1b;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+.favGroupContent .fas {
+  font-size: 15px;
+  color: #ff8f00;
+  padding-right: 5px;
+}
+.favGroupItem {
+  background-color: #FFF;
+  padding: 5px;
+  text-align: center;
+  color: #282828;
+}
+.itemSpace {
+  margin-top: 5px;
+}
+.itemSpace div {
+  padding-top: 5px;
+}
+.fa-trash-alt {
+  color: #888888;
+}
+.icoMap {
+  font-size: 22px;
+  color: white;
+}
+.pin {
+  border-radius: 50% 50% 50% 50%;
+  border: 0 solid #1976d2;
+  width: 26px;
+  height: 26px;
+  background-color: #63a4ff;
+  text-align: center;
+  transform: rotate(45deg);
+}
+.center {
+  text-align: center;
+}
+ng-map.customMap {
+  display: block;
+  height: 800px;
+}
+.custom-marker {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  border-radius: 50% 50% 50% 0;
+  border: 0 solid blue;
+  width: 33px;
+  height: 33px;
+  transform: rotate(-45deg);
+}
+.sportsCheck {
+  margin-top: 25px;
+  text-align: right;
+}
+.sportsCheck .checkGroup {
+  margin-top: 7px;
+}
+.sportsCheck span {
+  font-size: 14px;
+}
+.sportsCheck i {
+  padding-left: 3px;
+  font-size: 15px;
+}
+.sportsCheck button i {
+  padding-left: 5px;
+  font-size: 12px;
+}
+body {
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-size: 47px;
+  font-weight: 400;
+  letter-spacing: -5px;
+  margin-top: 15px;
+  padding-left: 15px;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 15px;
+}
+button,
+input,
+submit {
+  border: none;
+}
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.menuBg {
+  border-top-style: solid;
+  border-top-width: 24px;
+  border-color: #004a9f;
+  padding-bottom: 5px;
+  background-color: #1875d1;
+  color: white;
+}
+h3 {
+  text-align: center;
+}
+.spacer {
+  margin-top: 40px;
+}
+.modal-dialog {
+  top: 50px;
+  outline: none;
+  overflow: hidden;
+}
+.modal-content {
+  width: 300px;
+  margin: auto;
+}
+.no-border {
+  border-color: #FFF;
+}
+button:focus {
+  outline: none;
+}

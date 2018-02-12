@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sporti Exo</title>
+
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/styles/main.css">
+  <link rel="stylesheet" href="assets/styles/icofont.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="/node_modules/angular/angular.js"></script>
+  <script src="/node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+  <script src="/node_modules/ngmap/build/scripts/ng-map.min.js"></script>
+  <script src="/node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+  <script src="/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+
+</head>
+
+<body ng-app="app">
+  <ui-view></ui-view>
+
+  <script src="app/app.js"></script>
+  <script src="app/config/state.config.js"></script>
+  <script src="app/views/home/homeController.js"></script>
+  <script src="app/constants/hobbies.js"></script>
+  <script src="app/components/mapspotshandler/mapController.js"></script>
+  <script src="app/components/sportsCheckList/sportsCheckController.js"></script>
+  <script src="app/components/favlisthandler/favListController.js"></script>
+  <script src="app/components/sportsmodal/sportsModalController.js"></script>
+  <script src="app/services/spotsDataService.js"></script>
+  <script src="app/services/favDataService.js"></script>
+
+
+
+</body>
+
+</html>
